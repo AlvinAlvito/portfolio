@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Manualbook & Dokumentasi SI Pental</title>
+  <link rel="stylesheet" href="manualbook.css">
+</head>
+<body>
+
+<section class="page cover">
+  <div class="cover-grid">
+    <div class="cover-brand"><span class="cover-mark">☊</span><span>SI Pental<br><small style="font-size:8pt;font-weight:500;opacity:.7">Sahabat mentalmu</small></span></div>
+    <div>
+      <span class="cover-kicker">Manualbook & dokumentasi sistem</span>
+      <h1>Kenali pikiranmu.<br><span>Rawat dirimu.</span></h1>
+      <p class="cover-lead">Panduan lengkap penggunaan platform edukasi, refleksi SDQ, pendampingan, serta pengelolaan data SI Pental.</p>
+    </div>
+    <div class="cover-card">
+      <div><strong>Tentang dokumen</strong><p>Disusun untuk pengguna umum, pengelola, dan administrator. Setiap panduan dilengkapi tangkapan layar dari aplikasi yang berjalan.</p></div>
+      <div class="cover-meta"><div><small>Versi</small><b>1.0</b></div><div><small>Tahun</small><b>2026</b></div><div><small>Platform</small><b>Web</b></div><div><small>Institusi</small><b>UIN SU</b></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">Tentang dokumen</span></div>
+  <span class="eyebrow">Pengantar</span><h1>Panduan yang dibuat untuk dipakai, bukan sekadar disimpan.</h1>
+  <p class="lead">Dokumen ini menjelaskan seluruh pengalaman SI Pental dari dua sisi: bagaimana masyarakat menggunakan layanan, dan bagaimana administrator mengelola pertanyaan serta hasil asesmen.</p>
+  <div class="grid-3" style="margin-top:8mm">
+    <div class="card soft"><span class="icon">01</span><h3>Untuk pengguna</h3><p>Belajar psikologi, mengisi SDQ, membaca hasil refleksi, memakai chatbot, dan menghubungi konselor.</p></div>
+    <div class="card soft"><span class="icon">02</span><h3>Untuk admin</h3><p>Memahami dashboard, mengelola bank pertanyaan, mencari data, melihat detail, dan mengekspor laporan.</p></div>
+    <div class="card soft"><span class="icon">03</span><h3>Untuk pengelola teknis</h3><p>Memahami struktur data, konfigurasi, deployment, keamanan dasar, serta penanganan masalah umum.</p></div>
+  </div>
+  <div class="callout warning" style="margin-top:7mm"><div class="number">!</div><div><strong>Batas penggunaan layanan</strong><p>SI Pental adalah media edukasi dan refleksi awal. Hasil kuesioner maupun jawaban AI tidak menggantikan diagnosis psikolog, psikiater, konselor, atau dokter.</p></div></div>
+  <div class="quote">“Tujuan SI Pental bukan memberi label, melainkan membantu seseorang memahami kapan perlu menjaga diri dan kapan perlu mencari dukungan.”<small>Prinsip pengalaman pengguna SI Pental</small></div>
+  <table class="table">
+    <tr><th>Informasi dokumen</th><th>Keterangan</th></tr>
+    <tr><td>Judul</td><td>Manualbook & Dokumentasi SI Pental</td></tr>
+    <tr><td>Cakupan</td><td>Halaman publik, kuesioner SDQ, chatbot, konseling, dashboard admin, dan dokumentasi teknis</td></tr>
+    <tr><td>Versi aplikasi</td><td>Pembaruan antarmuka ungu–putih dan asesmen SDQ, Agustus 2026</td></tr>
+    <tr><td>Kontak layanan</td><td>WhatsApp konselor · hari kerja pukul 09.00–16.00 WIB</td></tr>
+  </table>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">Daftar isi</span></div>
+  <span class="eyebrow">Navigasi dokumen</span><h1>Temukan panduan yang dibutuhkan.</h1>
+  <div class="toc">
+    <div class="toc-item"><b>01</b><span>Gambaran sistem dan peran</span><small>4</small></div>
+    <div class="toc-item"><b>02</b><span>Alur pengguna</span><small>5</small></div>
+    <div class="toc-item"><b>03</b><span>Alur administrator</span><small>6</small></div>
+    <div class="toc-item"><b>04</b><span>Beranda dan navigasi</span><small>7</small></div>
+    <div class="toc-item"><b>05</b><span>Konseling dan chatbot</span><small>8</small></div>
+    <div class="toc-item"><b>06</b><span>Pusat Edukasi</span><small>9</small></div>
+    <div class="toc-item"><b>07</b><span>Klasifikasi dan tanda</span><small>10</small></div>
+    <div class="toc-item"><b>08</b><span>Rawat diri dan detail materi</span><small>11</small></div>
+    <div class="toc-item"><b>09</b><span>Tentang SI Pental</span><small>12</small></div>
+    <div class="toc-item"><b>10</b><span>Kuesioner SDQ</span><small>13–14</small></div>
+    <div class="toc-item"><b>11</b><span>Hasil refleksi</span><small>15</small></div>
+    <div class="toc-item"><b>12</b><span>Login administrator</span><small>16</small></div>
+    <div class="toc-item"><b>13</b><span>Dashboard analitik</span><small>17</small></div>
+    <div class="toc-item"><b>14</b><span>Bank pertanyaan</span><small>18–19</small></div>
+    <div class="toc-item"><b>15</b><span>Data responden</span><small>20–21</small></div>
+    <div class="toc-item"><b>16</b><span>Ekspor dan siklus data</span><small>22</small></div>
+    <div class="toc-item"><b>17</b><span>Struktur database</span><small>23</small></div>
+    <div class="toc-item"><b>18</b><span>Deployment dan keamanan</span><small>24</small></div>
+    <div class="toc-item"><b>19</b><span>Troubleshooting</span><small>25</small></div>
+    <div class="toc-item"><b>20</b><span>Ringkasan cepat</span><small>26</small></div>
+  </div>
+  <div class="callout" style="margin-top:10mm"><div class="number">i</div><div><strong>Cara membaca</strong><p>Pengguna umum dapat fokus pada halaman 4–15. Administrator disarankan melanjutkan ke halaman 16–22. Bagian teknis berada pada halaman 23–25.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">01 · Gambaran sistem</span></div>
+  <span class="eyebrow">Ekosistem layanan</span><h1>Satu ruang untuk belajar, berefleksi, dan mencari dukungan.</h1>
+  <p class="lead">SI Pental menyatukan konten kesehatan mental, asesmen awal berbasis SDQ, bantuan AI edukatif, akses konselor, dan pengelolaan hasil dalam sebuah website.</p>
+  <div class="grid-2" style="margin-top:7mm">
+    <div class="card dark"><span class="icon" style="background:rgba(255,255,255,.15)">U</span><h3>Area publik</h3><p>Dapat dibuka tanpa akun. Dirancang ramah, tidak menghakimi, dan mudah digunakan pada desktop maupun perangkat seluler.</p><ul class="feature-list" style="grid-template-columns:1fr"><li style="color:white">Pusat edukasi psikologi</li><li style="color:white">Refleksi SDQ 25 butir</li><li style="color:white">Chatbot edukatif</li><li style="color:white">Akses WhatsApp konselor</li></ul></div>
+    <div class="card"><span class="icon">A</span><h3>Area administrator</h3><p>Dilindungi autentikasi dan ditujukan untuk pengelola data serta bank pertanyaan.</p><ul class="feature-list" style="grid-template-columns:1fr"><li>Dashboard berbagai visualisasi</li><li>Kelola pertanyaan SDQ</li><li>Filter dan pagination backend</li><li>Detail serta ekspor responden</li></ul></div>
+  </div>
+  <h2 style="margin-top:9mm">Komponen utama</h2>
+  <div class="grid-4">
+    <div class="card center"><span class="icon pale" style="margin-inline:auto">25</span><h4>Butir SDQ</h4><p class="mini">Dibagi menjadi lima bagian.</p></div>
+    <div class="card center"><span class="icon pale" style="margin-inline:auto">5</span><h4>Subskala</h4><p class="mini">Empat kesulitan dan satu prososial.</p></div>
+    <div class="card center"><span class="icon pale" style="margin-inline:auto">AI</span><h4>Sahabat AI</h4><p class="mini">Jawaban edukatif dengan pagar keamanan.</p></div>
+    <div class="card center"><span class="icon pale" style="margin-inline:auto">WA</span><h4>Ruang curhat</h4><p class="mini">Terhubung ke konselor pada jam layanan.</p></div>
+  </div>
+  <div class="callout success" style="margin-top:8mm"><div class="number">✓</div><div><strong>Prinsip privasi</strong><p>Data identitas digunakan untuk membantu membaca hasil secara lebih bermakna. Pengelola wajib membatasi akses dan tidak menyebarkan hasil asesmen tanpa dasar yang sah.</p></div></div>
+</section>
+
+<section class="page landscape">
+  <div class="flow-wrap">
+    <div class="flow-header"><div class="flow-logo">☊</div><div><h1>Alur Penggunaan SI Pental</h1><p>Ringkasan perjalanan pengguna dari membuka website hingga memperoleh dukungan.</p></div></div>
+    <div class="flow-grid">
+      <div class="flow-card"><span class="number">1</span><div class="flow-icon">⌂</div><h3>Buka Beranda</h3><p>Kenali fungsi platform dan pilih kebutuhan utama.</p></div>
+      <div class="flow-card"><span class="number">2</span><div class="flow-icon">▤</div><h3>Pelajari Materi</h3><p>Jelajahi definisi, faktor, klasifikasi, mitos, dan rawat diri.</p></div>
+      <div class="flow-card"><span class="number">3</span><div class="flow-icon">✓</div><h3>Mulai Refleksi</h3><p>Isi identitas singkat dan jawab 25 butir SDQ dengan jujur.</p></div>
+      <div class="flow-card"><span class="number">4</span><div class="flow-icon">5×</div><h3>Selesaikan 5 Bagian</h3><p>Lima soal per bagian membuat pengisian terasa lebih ringan.</p></div>
+      <div class="flow-card"><span class="number">5</span><div class="flow-icon">◎</div><h3>Baca Hasil</h3><p>Pahami skor kesulitan, subskala, dan status refleksi.</p></div>
+      <div class="flow-card"><span class="number">6</span><div class="flow-icon">AI</div><h3>Tanya Sahabat AI</h3><p>Ajukan pertanyaan umum tentang perasaan dan kebiasaan sehat.</p></div>
+      <div class="flow-card"><span class="number">7</span><div class="flow-icon">WA</div><h3>Hubungi Konselor</h3><p>Gunakan WhatsApp bila membutuhkan ruang bercerita.</p></div>
+      <div class="flow-card"><span class="number">8</span><div class="flow-icon">♡</div><h3>Lanjutkan Rawat Diri</h3><p>Pilih kebiasaan kecil yang realistis dan konsisten.</p></div>
+    </div>
+    <div class="flow-notes"><h3>Catatan penting</h3><ul><li>Jawablah sesuai kondisi enam bulan terakhir.</li><li>Hasil bersifat indikatif, bukan diagnosis.</li><li>Dalam keadaan darurat, cari bantuan langsung.</li></ul></div>
+  </div>
+</section>
+
+<section class="page landscape">
+  <div class="flow-wrap">
+    <div class="flow-header"><div class="flow-logo">A</div><div><h1>Alur Kerja Administrator</h1><p>Ringkasan kegiatan pengelola dari login hingga pelaporan data.</p></div></div>
+    <div class="flow-grid">
+      <div class="flow-card"><span class="number">1</span><div class="flow-icon">⌑</div><h3>Login Admin</h3><p>Masuk memakai akun pengelola yang sah.</p></div>
+      <div class="flow-card"><span class="number">2</span><div class="flow-icon">⌁</div><h3>Pantau Dashboard</h3><p>Baca statistik, tren, status, usia, gender, dan skor.</p></div>
+      <div class="flow-card"><span class="number">3</span><div class="flow-icon">?</div><h3>Kelola Pertanyaan</h3><p>Tambah, edit, aktifkan, atau nonaktifkan butir SDQ.</p></div>
+      <div class="flow-card"><span class="number">4</span><div class="flow-icon">≡</div><h3>Buka Data</h3><p>Lihat tabel responden melalui pagination server.</p></div>
+      <div class="flow-card"><span class="number">5</span><div class="flow-icon">⌕</div><h3>Terapkan Filter</h3><p>Cari berdasarkan nama, status, tanggal, usia, atau gender.</p></div>
+      <div class="flow-card"><span class="number">6</span><div class="flow-icon">◉</div><h3>Tinjau Detail</h3><p>Periksa profil subskala, komposisi, dan jawaban per butir.</p></div>
+      <div class="flow-card"><span class="number">7</span><div class="flow-icon">⇩</div><h3>Export Excel</h3><p>Unduh data sesuai filter untuk pelaporan internal.</p></div>
+      <div class="flow-card"><span class="number">8</span><div class="flow-icon">↗</div><h3>Tindak Lanjut</h3><p>Gunakan informasi secara bertanggung jawab dan rahasia.</p></div>
+    </div>
+    <div class="flow-notes"><h3>Kontrol admin</h3><ul><li>Jangan membagikan akun bersama-sama.</li><li>Verifikasi filter sebelum ekspor.</li><li>Backup sebelum menghapus atau migrasi data.</li></ul></div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">04 · Beranda</span></div>
+  <span class="eyebrow">Halaman utama</span><h1>Mulai dari kebutuhan yang paling terasa.</h1>
+  <p class="lead">Beranda memperkenalkan SI Pental dan menyediakan jalur cepat menuju asesmen, edukasi, konseling, profil, dan area admin.</p>
+  <figure class="screenshot"><img src="assets/screenshots/01-beranda.jpg" alt="Tampilan beranda SI Pental"><figcaption class="screenshot-caption"><b>Gambar 1.</b> Hero beranda dan navigasi utama SI Pental.</figcaption></figure>
+  <div class="grid-2">
+    <div class="card"><h3>Navigasi utama</h3><ul class="feature-list" style="grid-template-columns:1fr"><li><b>Beranda</b> untuk kembali ke halaman awal.</li><li><b>Pusat Edukasi</b> untuk membaca materi.</li><li><b>Cek Kondisi</b> untuk membuka SDQ.</li><li><b>Tentang Kami</b> untuk mengenal platform.</li></ul></div>
+    <div class="card"><h3>Aksi cepat</h3><div class="steps"><div class="step"><span class="number">1</span><div><b>Mulai Cek</b><p>Membuka kuesioner refleksi.</p></div></div><div class="step"><span class="number">2</span><div><b>Mulai belajar</b><p>Membuka pusat edukasi.</p></div></div></div></div>
+  </div>
+  <div class="callout"><div class="number">i</div><div><strong>Navbar tetap terlihat</strong><p>Ketika halaman digulir, menu atas tetap berada di layar sehingga pengguna tidak perlu kembali ke paling atas untuk berpindah halaman.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">05 · Dukungan</span></div>
+  <span class="eyebrow">Konseling & chatbot</span><h1>Dua cara untuk memperoleh dukungan.</h1>
+  <div class="shot-two">
+    <figure class="screenshot"><img src="assets/screenshots/02-beranda-konseling.jpg" alt="Bagian konseling"><figcaption class="screenshot-caption"><b>Gambar 2.</b> Ruang Curhat dan informasi layanan.</figcaption></figure>
+    <figure class="screenshot"><img src="assets/screenshots/03-chatbot.jpg" alt="Chatbot SI Pental"><figcaption class="screenshot-caption"><b>Gambar 3.</b> Panel Sahabat AI.</figcaption></figure>
+  </div>
+  <div class="grid-2" style="margin-top:5mm">
+    <div class="card"><span class="icon">WA</span><h3>Hubungi konselor</h3><p>Tombol membuka WhatsApp ke nomor layanan dengan pesan awal yang telah disiapkan. Layanan dicantumkan pukul <b>09.00–16.00 WIB</b> pada hari kerja.</p><div class="steps"><div class="step"><span class="number">1</span><div><b>Tekan “Hubungi konselor”</b></div></div><div class="step"><span class="number">2</span><div><b>Pilih aplikasi WhatsApp</b></div></div><div class="step"><span class="number">3</span><div><b>Periksa pesan lalu kirim</b></div></div></div></div>
+    <div class="card"><span class="icon">AI</span><h3>Sahabat AI</h3><p>Tekan tombol chat mengambang, pilih pertanyaan contoh atau ketik pertanyaan sendiri, lalu tekan ikon kirim.</p><ul class="feature-list" style="grid-template-columns:1fr"><li>Memberi edukasi umum dan langkah aman.</li><li>Tidak memberikan diagnosis.</li><li>Mengarahkan ke bantuan profesional bila perlu.</li><li>Mendeteksi pesan krisis untuk respons keselamatan.</li></ul></div>
+  </div>
+  <div class="callout danger"><div class="number">!</div><div><strong>Jika ada risiko menyakiti diri atau orang lain</strong><p>Jangan hanya mengandalkan chatbot. Segera hubungi orang tepercaya, tenaga profesional, fasilitas kesehatan, atau layanan darurat setempat.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">06 · Pusat Edukasi</span></div>
+  <span class="eyebrow">Belajar tanpa stigma</span><h1>Materi disajikan sebagai pengalaman interaktif.</h1>
+  <p class="lead">Pusat Edukasi tidak hanya menampilkan kartu. Konten disusun dalam peta pikiran, jalur cerita, tab faktor, slider, accordion mitos dan fakta, papan tanda, serta carousel rawat diri.</p>
+  <figure class="screenshot"><img src="assets/screenshots/04-pusat-edukasi.jpg" alt="Pusat Edukasi"><figcaption class="screenshot-caption"><b>Gambar 4.</b> Hero Pusat Edukasi dan menu cepat enam modul.</figcaption></figure>
+  <div class="grid-3">
+    <div class="card"><span class="icon pale">1</span><h3>Gunakan menu cepat</h3><p>Pilih Definisi, Faktor, Klasifikasi, Mitos & Fakta, Tanda, atau Rawat Diri.</p></div>
+    <div class="card"><span class="icon pale">2</span><h3>Eksplorasi interaksi</h3><p>Tekan tab, buka accordion, dan geser carousel untuk melihat materi lain.</p></div>
+    <div class="card"><span class="icon pale">3</span><h3>Baca secukupnya</h3><p>Materi dapat dipelajari per bagian tanpa harus selesai dalam satu waktu.</p></div>
+  </div>
+  <div class="callout success" style="margin-top:5mm"><div class="number">✓</div><div><strong>Tips belajar</strong><p>Mulailah dari topik yang paling dekat dengan pengalaman saat ini. Informasi digunakan untuk membangun pemahaman dan empati, bukan untuk memberi label pada diri sendiri atau orang lain.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">07 · Materi interaktif</span></div>
+  <span class="eyebrow">Klasifikasi & tanda</span><h1>Kenali kondisi tanpa mendiagnosis sendiri.</h1>
+  <div class="shot-two">
+    <figure class="screenshot"><img src="assets/screenshots/05-edukasi-klasifikasi.jpg" alt="Klasifikasi gangguan"><figcaption class="screenshot-caption"><b>Gambar 5.</b> Slider klasifikasi dan filter topik.</figcaption></figure>
+    <figure class="screenshot"><img src="assets/screenshots/06-edukasi-tanda.jpg" alt="Tanda peringatan"><figcaption class="screenshot-caption"><b>Gambar 6.</b> Papan tanda yang perlu diperhatikan.</figcaption></figure>
+  </div>
+  <div class="grid-2" style="margin-top:5mm">
+    <div class="card"><h3>Menggunakan klasifikasi</h3><ol style="padding-left:5mm;margin-bottom:0"><li>Pilih filter kelompok materi.</li><li>Geser kartu secara horizontal.</li><li>Tekan <b>Buka materi</b> untuk penjelasan lengkap.</li><li>Kembali ke daftar melalui breadcrumb.</li></ol></div>
+    <div class="card"><h3>Membaca tanda peringatan</h3><p>Perhatikan tiga hal sekaligus:</p><div class="badge-row"><span class="badge">Durasi</span><span class="badge amber">Intensitas</span><span class="badge red">Dampak harian</span></div><p class="mini">Satu gejala tunggal tidak otomatis menunjukkan gangguan mental.</p></div>
+  </div>
+  <div class="callout warning" style="margin-top:6mm"><div class="number">!</div><div><strong>Gunakan istilah dengan hati-hati</strong><p>Diagnosis hanya dapat ditetapkan oleh tenaga profesional melalui pemeriksaan menyeluruh. Hindari menyimpulkan kondisi seseorang hanya dari ringkasan materi.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">08 · Rawat diri</span></div>
+  <span class="eyebrow">Dari pengetahuan ke tindakan</span><h1>Pilih kebiasaan kecil yang realistis.</h1>
+  <div class="shot-two">
+    <figure class="screenshot"><img src="assets/screenshots/07-edukasi-rawat-diri.jpg" alt="Panduan rawat diri"><figcaption class="screenshot-caption"><b>Gambar 7.</b> Carousel pilihan rawat diri.</figcaption></figure>
+    <figure class="screenshot"><img src="assets/screenshots/08-detail-materi.jpg" alt="Detail materi kecemasan"><figcaption class="screenshot-caption"><b>Gambar 8.</b> Halaman detail materi.</figcaption></figure>
+  </div>
+  <div class="grid-2" style="margin-top:5mm">
+    <div class="card"><h3>Carousel rawat diri</h3><p>Gunakan panah kiri dan kanan untuk melihat kebiasaan. Tekan <b>Saya coba</b> pada tindakan yang ingin dilakukan. Pilihan tersimpan pada perangkat.</p><div class="badge-row"><span class="badge green">Tidur cukup</span><span class="badge green">Olahraga</span><span class="badge green">Kelola media sosial</span></div></div>
+    <div class="card"><h3>Halaman detail</h3><p>Berisi ringkasan kondisi, penjelasan utama, pengingat bahwa informasi bukan diagnosis, akses konselor, dan rekomendasi bacaan terkait.</p></div>
+  </div>
+  <div class="callout"><div class="number">i</div><div><strong>Konsistensi lebih penting daripada jumlah</strong><p>Memilih satu kebiasaan yang dapat dilakukan secara rutin umumnya lebih membantu daripada memaksakan banyak perubahan sekaligus.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">09 · Tentang kami</span></div>
+  <span class="eyebrow">Identitas layanan</span><h1>Memahami tujuan dan batas SI Pental.</h1>
+  <p class="lead">Halaman Tentang Kami menjelaskan alasan platform dibuat, nilai layanan, pendekatan yang digunakan, serta batas antara edukasi dan layanan klinis.</p>
+  <figure class="screenshot"><img src="assets/screenshots/09-tentang-kami.jpg" alt="Halaman Tentang Kami"><figcaption class="screenshot-caption"><b>Gambar 9.</b> Halaman profil dan prinsip SI Pental.</figcaption></figure>
+  <div class="grid-3">
+    <div class="card center"><span class="icon pale" style="margin-inline:auto">♡</span><h3>Hangat</h3><p class="mini">Bahasa yang manusiawi dan tidak menghakimi.</p></div>
+    <div class="card center"><span class="icon pale" style="margin-inline:auto">◎</span><h3>Indikatif</h3><p class="mini">Membantu refleksi, bukan menetapkan diagnosis.</p></div>
+    <div class="card center"><span class="icon pale" style="margin-inline:auto">⌾</span><h3>Terarah</h3><p class="mini">Menghubungkan edukasi, asesmen, dan dukungan.</p></div>
+  </div>
+  <div class="callout success" style="margin-top:7mm"><div class="number">✓</div><div><strong>Kapan halaman ini digunakan?</strong><p>Buka halaman ini ketika ingin menjelaskan SI Pental kepada pengguna baru, mitra, institusi, atau pihak yang membutuhkan gambaran ringkas tentang layanan.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">10 · Kuesioner SDQ</span></div>
+  <span class="eyebrow">Refleksi terarah</span><h1>Mulai dari identitas singkat dan lima pertanyaan.</h1>
+  <figure class="screenshot"><img src="assets/screenshots/10-kuesioner-bagian-1.jpg" alt="Kuesioner bagian pertama"><figcaption class="screenshot-caption"><b>Gambar 10.</b> Identitas, indikator progres, dan bagian pertama kuesioner.</figcaption></figure>
+  <div class="grid-2">
+    <div class="card"><h3>Data awal</h3><ul class="feature-list" style="grid-template-columns:1fr"><li>Nama lengkap</li><li>Usia 10–100 tahun</li><li>Jenis kelamin</li></ul></div>
+    <div class="card"><h3>Pilihan jawaban</h3><div class="badge-row"><span class="badge">Tidak Pernah</span><span class="badge amber">Kadang-kadang</span><span class="badge green">Selalu</span></div><p class="mini">Pilih jawaban berdasarkan keadaan nyata selama enam bulan terakhir.</p></div>
+  </div>
+  <div class="callout warning" style="margin-top:5mm"><div class="number">!</div><div><strong>Jawab dengan jujur</strong><p>Tidak ada jawaban benar atau salah. Jangan memilih jawaban yang dianggap paling baik; pilih yang paling menggambarkan kondisi sebenarnya.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">10 · Kuesioner SDQ</span></div>
+  <span class="eyebrow">Navigasi bertahap</span><h1>Lima soal per bagian agar tetap ringan.</h1>
+  <figure class="screenshot"><img src="assets/screenshots/11-kuesioner-bagian-2.jpg" alt="Kuesioner bagian kedua"><figcaption class="screenshot-caption"><b>Gambar 11.</b> Bagian berikutnya setelah lima soal pertama terjawab.</figcaption></figure>
+  <div class="grid-2">
+    <div class="card"><h3>Cara menyelesaikan</h3><div class="steps"><div class="step"><span class="number">1</span><div><b>Jawab lima pernyataan</b><p>Semua soal pada bagian aktif wajib dijawab.</p></div></div><div class="step"><span class="number">2</span><div><b>Tekan Selanjutnya</b><p>Sistem memeriksa jawaban yang belum diisi.</p></div></div><div class="step"><span class="number">3</span><div><b>Ulangi hingga bagian 5</b><p>Progres tampil dalam angka dan persen.</p></div></div></div></div>
+    <div class="card"><h3>Lima subskala SDQ</h3><ul class="feature-list" style="grid-template-columns:1fr"><li>Gejala Emosional</li><li>Masalah Perilaku</li><li>Hiperaktivitas</li><li>Masalah Teman Sebaya</li><li>Kekuatan Prososial</li></ul></div>
+  </div>
+  <div class="callout"><div class="number">i</div><div><strong>Tentang perhitungan</strong><p>Jawaban bernilai 0–2. Beberapa butir menggunakan reverse scoring. Skor kesulitan adalah jumlah empat subskala kesulitan dengan rentang 0–40; prososial dibaca terpisah dengan rentang 0–10.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">11 · Hasil refleksi</span></div>
+  <span class="eyebrow">Membaca hasil</span><h1>Gunakan hasil sebagai arah, bukan label.</h1>
+  <figure class="screenshot"><img src="assets/screenshots/12-hasil-refleksi.jpg" alt="Hasil refleksi SDQ"><figcaption class="screenshot-caption"><b>Gambar 12.</b> Subskala hasil dan panel keterangan kategori yang dapat dibuka.</figcaption></figure>
+  <div class="grid-3">
+    <div class="card"><span class="badge green">Kondisi Stabil</span><p style="margin-top:3mm">Pertahankan kebiasaan positif dan dukungan yang sudah dimiliki.</p></div>
+    <div class="card"><span class="badge amber">Perlu Pemantauan</span><p style="margin-top:3mm">Perhatikan perubahan dan pertimbangkan konseling awal.</p></div>
+    <div class="card"><span class="badge red">Penanganan Khusus</span><p style="margin-top:3mm">Disarankan berbicara dengan tenaga profesional.</p></div>
+  </div>
+  <div class="callout warning" style="margin-top:6mm"><div class="number">!</div><div><strong>Interpretasi harus utuh</strong><p>Jangan melihat angka total saja. Perhatikan profil masing-masing subskala, kondisi sehari-hari, durasi keluhan, dan dampaknya terhadap sekolah, pekerjaan, relasi, tidur, serta perawatan diri.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">12 · Login admin</span></div>
+  <span class="eyebrow">Akses terbatas</span><h1>Masuk ke workspace administrator.</h1>
+  <figure class="screenshot"><img src="assets/screenshots/13-login-admin.jpg" alt="Modal login admin"><figcaption class="screenshot-caption"><b>Gambar 13.</b> Form autentikasi administrator.</figcaption></figure>
+  <div class="grid-2">
+    <div class="card"><h3>Langkah masuk</h3><div class="steps"><div class="step"><span class="number">1</span><div><b>Tekan Admin</b><p>Tombol berada pada navbar.</p></div></div><div class="step"><span class="number">2</span><div><b>Isi username dan password</b><p>Gunakan kredensial dari pengelola.</p></div></div><div class="step"><span class="number">3</span><div><b>Tekan Masuk sebagai admin</b><p>Sesi aman akan dibuat.</p></div></div></div></div>
+    <div class="card"><h3>Praktik keamanan</h3><ul class="feature-list" style="grid-template-columns:1fr"><li>Jangan menyimpan password di komputer umum.</li><li>Jangan membagikan akun lewat grup terbuka.</li><li>Selalu tekan Keluar setelah selesai.</li><li>Ubah kredensial jika diduga bocor.</li></ul></div>
+  </div>
+  <div class="callout danger"><div class="number">!</div><div><strong>Login dibatasi</strong><p>Percobaan login berulang dibatasi oleh sistem. Jika gagal, periksa huruf besar-kecil dan tunggu sebentar sebelum mencoba kembali.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">13 · Dashboard</span></div>
+  <span class="eyebrow">Overview analitik</span><h1>Memahami kondisi data dalam satu pandangan.</h1>
+  <figure class="screenshot"><img src="assets/screenshots/14-admin-dashboard.jpg" alt="Dashboard admin"><figcaption class="screenshot-caption"><b>Gambar 14.</b> Statistik ringkas, line chart, donut chart, dan navigasi admin.</figcaption></figure>
+  <div class="grid-2">
+    <div class="card"><h3>Metrik ringkas</h3><ul class="feature-list" style="grid-template-columns:1fr"><li>Total responden</li><li>Jumlah asesmen SDQ terbaru</li><li>Tingkat kelengkapan</li><li>Rata-rata usia</li></ul></div>
+    <div class="card"><h3>Visualisasi</h3><ul class="feature-list" style="grid-template-columns:1fr"><li>Tren partisipasi enam bulan</li><li>Status hasil dalam donut chart</li><li>Rata-rata item per subskala</li><li>Distribusi gender, usia, dan skor</li></ul></div>
+  </div>
+  <div class="callout"><div class="number">i</div><div><strong>Grafik mengikuti database</strong><p>Nilai pada dashboard berubah otomatis ketika data responden bertambah atau dihapus. Data lama tetap dibedakan dari asesmen SDQ terbaru.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">14 · Bank pertanyaan</span></div>
+  <span class="eyebrow">Pengelolaan instrumen</span><h1>Meninjau seluruh butir SDQ.</h1>
+  <figure class="screenshot"><img src="assets/screenshots/15-admin-bank-pertanyaan.jpg" alt="Bank pertanyaan admin"><figcaption class="screenshot-caption"><b>Gambar 15.</b> Daftar pertanyaan, kategori, skoring, status, dan aksi.</figcaption></figure>
+  <div class="grid-2">
+    <div class="card"><h3>Informasi pada tabel</h3><p>Setiap baris menampilkan nomor, teks pernyataan, subskala, pola skoring, status aktif, serta tombol edit dan hapus.</p></div>
+    <div class="card"><h3>Pencarian cepat</h3><p>Gunakan kolom pencarian untuk menyaring berdasarkan nomor, kata dalam pernyataan, kategori, atau status.</p></div>
+  </div>
+  <div class="callout danger" style="margin-top:5mm"><div class="number">!</div><div><strong>Jangan mengubah instrumen tanpa dasar</strong><p>Perubahan teks, kategori, urutan, atau reverse scoring dapat memengaruhi validitas dan hasil. Konsultasikan perubahan substantif dengan pihak yang memahami instrumen SDQ.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">14 · Bank pertanyaan</span></div>
+  <span class="eyebrow">Tambah & edit</span><h1>Mengelola butir dengan kontrol yang jelas.</h1>
+  <figure class="screenshot compact"><img src="assets/screenshots/16-admin-form-pertanyaan.jpg" alt="Form tambah pertanyaan"><figcaption class="screenshot-caption"><b>Gambar 16.</b> Modal tambah pertanyaan SDQ.</figcaption></figure>
+  <div class="grid-2">
+    <div class="card"><h3>Kolom yang tersedia</h3><table class="table"><tr><th>Kolom</th><th>Fungsi</th></tr><tr><td>Nomor</td><td>Urutan unik pertanyaan.</td></tr><tr><td>Subskala</td><td>Dimensi tujuan skoring.</td></tr><tr><td>Pernyataan</td><td>Teks yang dibaca pengguna.</td></tr><tr><td>Reverse</td><td>Membalik skor 0–1–2 menjadi 2–1–0.</td></tr><tr><td>Aktif</td><td>Menentukan kemunculan di publik.</td></tr></table></div>
+    <div class="card"><h3>Alur perubahan</h3><div class="steps"><div class="step"><span class="number">1</span><div><b>Buka tambah atau edit</b></div></div><div class="step"><span class="number">2</span><div><b>Periksa semua kolom</b></div></div><div class="step"><span class="number">3</span><div><b>Simpan perubahan</b></div></div><div class="step"><span class="number">4</span><div><b>Uji di halaman publik</b></div></div></div></div>
+  </div>
+  <div class="callout warning"><div class="number">!</div><div><strong>Hapus bersifat permanen</strong><p>Gunakan nonaktif untuk menyembunyikan butir sementara. Lakukan backup database sebelum penghapusan atau perubahan massal.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">15 · Data responden</span></div>
+  <span class="eyebrow">Pencarian & pelaporan</span><h1>Temukan data yang dibutuhkan dengan cepat.</h1>
+  <figure class="screenshot"><img src="assets/screenshots/17-admin-data-responden.jpg" alt="Data responden"><figcaption class="screenshot-caption"><b>Gambar 17.</b> Filter, ekspor, pagination, dan tabel responden.</figcaption></figure>
+  <div class="grid-2">
+    <div class="card"><h3>Filter utama</h3><div class="badge-row"><span class="badge">Pencarian</span><span class="badge">Gender</span><span class="badge">Status</span><span class="badge">Jenis asesmen</span></div><p class="mini">Pencarian mendukung nama, ID, atau skor.</p></div>
+    <div class="card"><h3>Filter lanjutan</h3><div class="badge-row"><span class="badge amber">Tanggal awal</span><span class="badge amber">Tanggal akhir</span><span class="badge amber">Usia minimum</span><span class="badge amber">Usia maksimum</span></div><p class="mini">Tekan Terapkan untuk menjalankan kombinasi filter.</p></div>
+  </div>
+  <div class="callout"><div class="number">i</div><div><strong>Pagination backend</strong><p>Pilihan 10, 20, atau 50 baris menentukan jumlah data per halaman. Server hanya mengambil bagian yang diperlukan sehingga tabel tetap efisien saat data bertambah.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">15 · Detail responden</span></div>
+  <span class="eyebrow">Tinjauan individual</span><h1>Membaca profil asesmen secara menyeluruh.</h1>
+  <figure class="screenshot"><img src="assets/screenshots/18-admin-detail-responden.jpg" alt="Detail responden"><figcaption class="screenshot-caption"><b>Gambar 18.</b> Profil, metrik, radar, bar chart, dan jawaban per butir.</figcaption></figure>
+  <div class="grid-3">
+    <div class="card"><h3>Profil</h3><p class="mini">Nama, ID, usia, jenis kelamin, dan waktu pengisian.</p></div>
+    <div class="card"><h3>Ringkasan</h3><p class="mini">Skor kesulitan, jumlah jawaban, dan status hasil.</p></div>
+    <div class="card"><h3>Rincian</h3><p class="mini">Radar lima subskala, komposisi skor, dan jawaban tiap butir.</p></div>
+  </div>
+  <div class="callout danger" style="margin-top:6mm"><div class="number">!</div><div><strong>Jaga kerahasiaan</strong><p>Halaman ini memuat informasi individual. Hindari mengambil screenshot atau membagikan hasil melalui saluran yang tidak aman kecuali telah memiliki tujuan dan kewenangan yang jelas.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">16 · Ekspor & data</span></div>
+  <span class="eyebrow">Siklus data</span><h1>Dari jawaban pengguna menjadi laporan.</h1>
+  <div class="steps" style="margin-top:7mm">
+    <div class="step"><span class="number">1</span><div><b>Pengguna mengirim SDQ</b><p>Profil singkat, 25 jawaban mentah, skor terhitung, subskala, dan status disimpan dalam satu transaksi database.</p></div></div>
+    <div class="step"><span class="number">2</span><div><b>Dashboard melakukan agregasi</b><p>Sistem menyusun statistik total, demografi, tren bulanan, status, rentang skor, serta rata-rata subskala.</p></div></div>
+    <div class="step"><span class="number">3</span><div><b>Admin menerapkan filter</b><p>Filter pencarian, demografi, status, jenis asesmen, rentang tanggal, dan usia dapat digabungkan.</p></div></div>
+    <div class="step"><span class="number">4</span><div><b>Export Excel</b><p>File <code>.xls</code> berisi data sesuai filter aktif, termasuk lima subskala dan waktu pengisian.</p></div></div>
+  </div>
+  <h2 style="margin-top:8mm">Langkah ekspor yang disarankan</h2>
+  <ul class="checklist"><li>Tentukan tujuan laporan.</li><li>Terapkan filter yang diperlukan.</li><li>Periksa jumlah data ditemukan.</li><li>Tekan tombol Export Excel.</li><li>Simpan pada lokasi yang aman.</li><li>Batasi distribusi file.</li><li>Hapus salinan yang tidak diperlukan.</li><li>Catat periode dan kriteria ekspor.</li></ul>
+  <div class="callout warning" style="margin-top:6mm"><div class="number">!</div><div><strong>Ekspor mengikuti filter</strong><p>Jika admin memfilter gender, status, tanggal, atau usia, file unduhan hanya berisi data yang memenuhi filter tersebut. Gunakan Reset untuk kembali ke seluruh data.</p></div></div>
+  <div class="card soft" style="margin-top:5mm"><h3>Penghapusan data</h3><p>Tombol hapus pada detail atau tabel menghapus responden beserta semua jawabannya melalui relasi cascade. Tindakan ini tidak dapat dipulihkan tanpa backup.</p></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">17 · Database</span></div>
+  <span class="eyebrow">Struktur penyimpanan</span><h1>Relasi inti database SI Pental.</h1>
+  <div class="er-diagram">
+    <div class="entity"><h3>questions</h3><ul><li>id</li><li>number</li><li>text</li><li>category</li><li>is_reverse</li><li>is_active</li></ul></div>
+    <div class="relation">···</div>
+    <div class="entity"><h3>responses</h3><ul><li>id</li><li>name, age, gender</li><li>assessment_type</li><li>total_score</li><li>result_level</li><li>category_scores</li></ul></div>
+    <div class="relation">1→N</div>
+    <div class="entity"><h3>response_answers</h3><ul><li>id</li><li>response_id</li><li>question_no</li><li>category</li><li>raw_answer</li><li>score</li></ul></div>
+  </div>
+  <table class="table">
+    <tr><th>Tabel</th><th>Fungsi</th><th>Catatan</th></tr>
+    <tr><td><code>questions</code></td><td>Master 25 butir SDQ.</td><td>Nomor unik; kategori dan reverse scoring memengaruhi hasil.</td></tr>
+    <tr><td><code>responses</code></td><td>Profil dan ringkasan satu asesmen.</td><td>Menyimpan tipe legacy/SDQ serta skor subskala berbentuk JSON.</td></tr>
+    <tr><td><code>response_answers</code></td><td>Jawaban per butir.</td><td>Terhubung ke respons dan terhapus otomatis saat induknya dihapus.</td></tr>
+    <tr><td><code>users</code></td><td>Akun pengguna sistem.</td><td>Username unik dan password disimpan dalam bentuk hash.</td></tr>
+    <tr><td><code>sessions</code></td><td>Sesi login dan kunjungan aplikasi.</td><td>Dapat dibersihkan tanpa menghapus hasil asesmen.</td></tr>
+    <tr><td><code>cache / cache_locks</code></td><td>Cache aplikasi.</td><td>Bukan data utama; dapat dibangun ulang.</td></tr>
+    <tr><td><code>migrations</code></td><td>Riwayat versi struktur database.</td><td>Menentukan migrasi yang sudah dijalankan.</td></tr>
+  </table>
+  <div class="callout"><div class="number">i</div><div><strong>Data lama tetap dikenali</strong><p>Kolom <code>assessment_type</code> membedakan data kuesioner lama dari SDQ terbaru sehingga statistik dan detail dapat ditampilkan secara tepat.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">18 · Deployment</span></div>
+  <span class="eyebrow">Operasional</span><h1>Checklist publikasi dan keamanan dasar.</h1>
+  <div class="grid-2" style="margin-top:6mm">
+    <div class="card"><h3>Struktur cPanel</h3><div class="code">/home/sipental/
+├── laravel/       # aplikasi, vendor, .env
+└── public_html/   # index.php dan aset publik</div><p class="mini">Jalur pada <code>public_html/index.php</code> harus menuju <code>../laravel/vendor</code>, <code>../laravel/bootstrap</code>, dan <code>../laravel/storage</code>.</p></div>
+    <div class="card"><h3>Permission</h3><table class="table"><tr><th>Target</th><th>Mode</th></tr><tr><td>Folder umum</td><td><code>0755</code></td></tr><tr><td>File umum</td><td><code>0644</code></td></tr><tr><td><code>.env</code></td><td><code>0600/0640</code></td></tr><tr><td>storage & cache</td><td><code>0775</code></td></tr></table></div>
+  </div>
+  <h2 style="margin-top:7mm">Sebelum website dinyatakan siap</h2>
+  <ul class="checklist"><li>Backup file dan database lama.</li><li>Pastikan document root benar.</li><li>Isi APP_URL dengan domain HTTPS.</li><li>Isi kredensial database cPanel.</li><li>Pastikan APP_KEY tersedia.</li><li>Set APP_DEBUG=false.</li><li>Pasang API chatbot di server.</li><li>Bersihkan configuration cache.</li><li>Uji login dan logout admin.</li><li>Uji pengiriman kuesioner.</li><li>Uji export Excel.</li><li>Periksa log setelah pengujian.</li></ul>
+  <div class="code">php artisan optimize:clear
+php artisan migrate --force</div>
+  <div class="callout danger"><div class="number">!</div><div><strong>Jangan pernah membagikan file .env</strong><p>File tersebut dapat berisi password database dan API key. Jika sebuah key pernah terlihat pada screenshot atau pesan publik, segera cabut dan buat key baru.</p></div></div>
+</section>
+
+<section class="page">
+  <div class="topline"><div class="document-brand"><span class="brand-mark">☊</span> SI Pental</div><span class="chapter-no">19 · Troubleshooting</span></div>
+  <span class="eyebrow">Pemecahan masalah</span><h1>Mulai dari pesan error yang paling spesifik.</h1>
+  <table class="table" style="margin-top:6mm">
+    <tr><th>Gejala</th><th>Kemungkinan penyebab</th><th>Tindakan</th></tr>
+    <tr><td>HTTP Error 500</td><td>Path <code>vendor/autoload.php</code> salah, cache lama, permission, atau konfigurasi.</td><td>Baca <code>error_log</code> dan <code>storage/logs/laravel.log</code>; perbaiki error pertama yang muncul.</td></tr>
+    <tr><td>Halaman kosong</td><td><code>$app-&gt;handleRequest(...)</code> hilang dari index.php.</td><td>Pastikan front controller lengkap.</td></tr>
+    <tr><td>Database connection error</td><td>Nama DB, username, password, host, atau privilege keliru.</td><td>Cocokkan kredensial cPanel pada <code>.env</code>.</td></tr>
+    <tr><td>CSS/gambar tidak muncul</td><td>Aset tidak berada di document root atau cache browser.</td><td>Pastikan folder <code>assets</code> ada di <code>public_html</code>, lalu lakukan hard refresh.</td></tr>
+    <tr><td>Chatbot belum dikonfigurasi</td><td>API key/model belum terbaca oleh Laravel.</td><td>Periksa variabel server, lalu jalankan <code>optimize:clear</code>.</td></tr>
+    <tr><td>Chatbot koneksi bermasalah</td><td>Provider menolak request, kuota, SSL, atau jaringan server.</td><td>Periksa log Laravel tanpa menampilkan API key.</td></tr>
+    <tr><td>Grafik admin kosong</td><td>Belum ada SDQ baru atau library grafik gagal dimuat.</td><td>Periksa data dan console browser/jaringan CDN.</td></tr>
+    <tr><td>Impor SQL gagal duplikat</td><td>Dump dimasukkan ke tabel yang sudah berisi data.</td><td>Backup lalu gunakan database kosong atau lakukan merge terkontrol.</td></tr>
+  </table>
+  <div class="callout warning"><div class="number">1</div><div><strong>Urutan diagnosis teknis</strong><p>Catat waktu kejadian → buka log terbaru → baca baris error pertama → cocokkan path/file/konfigurasi → perbaiki satu penyebab → bersihkan cache → uji kembali.</p></div></div>
+  <div class="callout success" style="margin-top:4mm"><div class="number">✓</div><div><strong>Simpan bukti yang aman</strong><p>Screenshot error boleh disimpan untuk diagnosis, tetapi sensor API key, password, cookie, token, dan informasi pribadi responden sebelum dibagikan.</p></div></div>
+</section>
+
+<section class="page end-page">
+  <div class="end-mark">☊</div>
+  <span class="eyebrow" style="margin-top:10mm">Ringkasan cepat</span>
+  <h1>SI Pental siap digunakan.</h1>
+  <p class="lead">Pelajari materi tanpa memberi label, isi asesmen dengan jujur, baca hasil sebagai arah refleksi, dan cari dukungan ketika dibutuhkan.</p>
+  <div class="end-info"><div class="grid-3"><div><h3>Pengguna</h3><p class="mini">Belajar · Refleksi · Dukungan</p></div><div><h3>Admin</h3><p class="mini">Pantau · Kelola · Ekspor</p></div><div><h3>Layanan</h3><p class="mini">09.00–16.00 WIB</p></div></div></div>
+  <div class="callout warning" style="width:150mm;margin-top:10mm;text-align:left"><div class="number">!</div><div><strong>Pengingat terakhir</strong><p>Informasi di SI Pental tidak menggantikan diagnosis atau penanganan profesional. Dalam keadaan krisis atau darurat, segera cari pertolongan langsung.</p></div></div>
+  <p class="mini" style="margin-top:18mm">Manualbook & Dokumentasi SI Pental · Versi 1.0 · 2026</p>
+</section>
+
+</body>
+</html>

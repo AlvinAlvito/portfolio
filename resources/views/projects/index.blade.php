@@ -1,0 +1,6 @@
+@extends('layouts.public')
+@section('title', 'Portofolio Proyek - Avinto Project')
+@section('content')
+<section class="page-hero project-page-hero"><div class="container reveal"><div class="breadcrumbs"><a href="{{ route('home') }}">Beranda</a><span>/</span><span>Proyek</span></div><span class="section-kicker">Portfolio archive</span><h1 class="section-title">Produk digital yang sudah<br>menjadi bagian dari dunia nyata.</h1><p>Jelajahi karya lintas web, mobile, sistem informasi, pendidikan, dan produk institusi.</p></div></section>
+<section class="section"><div class="container"><form class="portfolio-filter reveal" method="GET"><a class="{{ request('category') ? '' : 'active' }}" href="{{ route('projects.index') }}">Semua</a>@foreach($categories as $category)<a class="{{ request('category') === $category ? 'active' : '' }}" href="{{ route('projects.index', ['category' => $category]) }}">{{ $category }}</a>@endforeach</form><div class="project-grid">@forelse($projects as $project)@include('partials.project-card', compact('project'))@empty<div class="card empty-state"><i data-lucide="folder-search"></i><p>Belum ada proyek pada kategori ini.</p></div>@endforelse</div>@if($projects->hasPages())<div class="public-pagination">{{ $projects->onEachSide(1)->links('vendor.pagination.avinto') }}</div>@endif</div></section>
+@endsection
